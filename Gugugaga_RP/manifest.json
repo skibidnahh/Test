@@ -1,0 +1,18 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "§b Gugugaga Penguin RP V.2 | §e by  DLT_Craft",
+    "description": "Meme Penguin Resource Pack by DLT_Craft",
+    "uuid": "f1de3392-d17c-40a8-ba76-745601509cb9",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 26, 3]
+  },
+  "modules": [
+    {
+      "description": "Gugugaga Penguin Resources",
+      "type": "resources",
+      "uuid": "2ae25861-bc0b-4872-8759-5a31e9d57149",
+      "version": [1, 0, 0]
+    }
+  ]
+}

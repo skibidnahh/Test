@@ -1,0 +1,30 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.gugugaga.move": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						"idle"
+					],
+					"transitions": [
+						{
+							"moving": "query.is_moving"
+						}
+					]
+				},
+				"moving": {
+					"animations": [
+						"walk"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_moving"
+						}
+					]
+				}
+			}
+		}
+	}
+}
