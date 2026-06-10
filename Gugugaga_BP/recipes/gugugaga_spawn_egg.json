@@ -1,0 +1,24 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "custom:recipe_gugugaga_spawn_egg"
+    },
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " I ",
+      "SES",
+      " C "
+    ],
+    "key": {
+      "I": { "item": "minecraft:ink_sac" },
+      "E": { "item": "minecraft:egg" },
+      "S": { "item": "minecraft:snowball" },
+      "C": { "item": "minecraft:cod" }
+    },
+    "result": {
+      "item": "custom:gugugaga_penguin_spawn_egg",
+      "count": 1
+    }
+  }
+}
