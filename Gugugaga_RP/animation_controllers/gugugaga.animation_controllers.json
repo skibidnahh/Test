@@ -1,0 +1,61 @@
+{
+        "format_version": "1.10.0",
+        "animation_controllers": {
+                "controller.animation.gugugaga.move": {
+                        "initial_state": "default",
+                        "states": {
+                                "default": {
+                                        "animations": [ "idle" ],
+                                        "transitions": [
+                                                { "moving": "query.is_moving" }
+                                        ]
+                                },
+                                "moving": {
+                                        "animations": [ "walk" ],
+                                        "transitions": [
+                                                { "default": "!query.is_moving" }
+                                        ]
+                                }
+                        }
+                },
+                "controller.animation.gugugaga.combat": {
+                        "initial_state": "default",
+                        "states": {
+                                "default": {
+                                        "transitions": [
+                                                { "attacking": "query.property('gugugaga:is_attacking') == true" },
+                                                { "hurting":   "query.hurt_time > 0" }
+                                        ]
+                                },
+                                "attacking": {
+                                        "animations": [ "attack" ],
+                                        "transitions": [
+                                                { "default": "query.property('gugugaga:is_attacking') == false" }
+                                        ]
+                                },
+                                "hurting": {
+                                        "animations": [ "attacked" ],
+                                        "transitions": [
+                                                { "default": "query.hurt_time <= 0" }
+                                        ]
+                                }
+                        }
+                },
+                "controller.animation.gugugaga.mood": {
+                        "initial_state": "default",
+                        "states": {
+                                "default": {
+                                        "transitions": [
+                                                { "happy": "query.property('gugugaga:is_happy') == true" }
+                                        ]
+                                },
+                                "happy": {
+                                        "animations": [ "beg" ],
+                                        "transitions": [
+                                                { "default": "query.property('gugugaga:is_happy') == false" }
+                                        ]
+                                }
+                        }
+                }
+        }
+}

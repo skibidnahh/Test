@@ -1,0 +1,3 @@
+entity.custom:gugugaga_penguin.name=Gugugaga
+item.spawn_egg.entity.custom:gugugaga_penguin.name=Trứng Gugugaga
+action.interact.gugugaga=Mở Menu Quản Lý
